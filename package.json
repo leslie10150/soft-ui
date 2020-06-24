@@ -1,0 +1,78 @@
+{
+  "name": "soft-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/soft-ui.min.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "build:style": "gulp --gulpfile build/gen-style.js",
+    "build:prod": "webpack --config build/webpack.prod.js",
+    "build:components": "webpack --config build/webpack.component.js",
+    "build": "npm run build:style && npm run build:prod && npm run build:components",
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "sogud",
+  "license": "ISC",
+  "dependencies": {
+    "async-validator": "^3.3.0",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.13.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "babel-loader": "^8.0.6",
+    "chai": "^4.2.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "commitizen": "^4.1.2",
+    "cross-env": "^5.2.0",
+    "css-loader": "2.1.1",
+    "cz-customizable": "^6.2.0",
+    "file-loader": "^4.2.0",
+    "gh-pages": "^2.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "highlight.js": "^10.1.1",
+    "karma": "^4.2.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage": "^2.0.1",
+    "karma-mocha": "^1.3.0",
+    "karma-sinon-chai": "^2.0.2",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "^0.0.32",
+    "karma-webpack": "^4.0.2",
+    "less": "^3.10.2",
+    "less-loader": "^5.0.0",
+    "mocha": "^6.2.0",
+    "node-sass": "^4.12.0",
+    "raw-loader": "^4.0.1",
+    "rimraf": "^3.0.0",
+    "sass-loader": "^7.3.1",
+    "sinon": "^7.4.1",
+    "sinon-chai": "^3.3.0",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.1.0",
+    "vue-highlight.js": "^3.1.0",
+    "vue-loader": "^15.7.1",
+    "vue-style-loader": "^4.1.2",
+    "vuepress": "^1.5.2",
+    "vuepress-plugin-demo-block": "^0.7.2"
+  }
+}
