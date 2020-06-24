@@ -1,0 +1,107 @@
+/* button.scss */
+@charset "UTF-8";
+@import '../common/var';
+@import '../mixins/mixins';
+
+@include b(button) {
+  min-width: 60px;
+  height: 33px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  border-width: 1px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid transparent;
+  padding: 0 10px;
+  cursor: pointer;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &-default {
+    color: #333;
+    background: #ffffff;
+    box-shadow: 3px 3px 8px #d9d9d9, -3px -3px 8px #ffffff;
+    // &:active,
+    // &:focus,
+    // &:hover,
+    &:active {
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.062),
+        0px 0px 0px rgba(255, 255, 255, 0.5),
+        inset 5px 5px 30px rgba(0, 0, 0, 0.055),
+        inset -5px -5px 30px rgba(255, 255, 255, 1);
+      transition: box-shadow 0.2s ease-out;
+    }
+  }
+  &-primary {
+    color: #fff;
+    background-color: $--color-primary;
+    box-shadow: 3px 3px 8px #d9d9d9, -3px -3px 3px #ffffff;
+    &:active {
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.062),
+        0px 0px 0px rgba(91, 83, 162, 0.255),
+        inset 5px 5px 30px rgba(0, 0, 0, 0.062),
+        inset -5px -5px 30px rgba(51, 46, 100, 0.58);
+      transition: box-shadow 0.2s ease-out;
+    }
+  }
+
+  &-info {
+    color: #fff;
+    background-color: $--color-info;
+    box-shadow: 3px 3px 8px #d9d9d9, -3px -3px 3px #ffffff;
+
+    &:active {
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.062),
+        0px 0px 0px rgba(19, 152, 192, 0.255),
+        inset 5px 5px 30px rgba(0, 0, 0, 0.062),
+        inset -5px -5px 30px mix($--color-info, rgba(18, 80, 131, 0.5));
+      transition: box-shadow 0.2s ease-out;
+    }
+  }
+  &-success {
+    color: #fff;
+    background-color: $--color-success;
+    box-shadow: 3px 3px 8px #d9d9d9, -3px -3px 3px #ffffff;
+
+    &:active {
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.062),
+        0px 0px 0px rgba(33, 192, 19, 0.178),
+        inset 5px 5px 30px rgba(0, 0, 0, 0.062),
+        inset -5px -5px 30px rgba(9, 190, 39, 0.247);
+      transition: box-shadow 0.2s ease-out;
+      // background-color: mix($--color-success, #ccc);
+    }
+  }
+  &-warning {
+    color: #fff;
+    background-color: $--color-warning;
+    box-shadow: 3px 3px 8px #d9d9d9, -3px -3px 3px #ffffff;
+
+    &:active {
+      // background-color: mix($--color-warning, #ccc);
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.062),
+        0px 0px 0px rgba(175, 192, 19, 0.137),
+        inset 5px 5px 30px rgba(0, 0, 0, 0.062),
+        inset -5px -5px 30px rgba(99, 100, 12, 0.199);
+      transition: box-shadow 0.2s ease-out;
+    }
+  }
+  &-error {
+    color: #fff;
+    background-color: $--color-error;
+    box-shadow: 3px 3px 8px #d9d9d9, -3px -3px 3px #ffffff;
+
+    &:active {
+      // background-color: mix($--color-error, #ccc);
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.062),
+        0px 0px 0px rgba(192, 39, 19, 0.255),
+        inset 5px 5px 30px rgba(0, 0, 0, 0.062),
+        inset -5px -5px 30px rgba(105, 7, 31, 0.322);
+      transition: box-shadow 0.2s ease-out;
+    }
+  }
+}

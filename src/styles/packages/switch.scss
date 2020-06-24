@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import '../common/var';
+@import '../mixins/mixins';
+
+.soft-switch {
+  display: block;
+  position: relative;
+  width: 52px;
+  height: 32px;
+  border: 1px solid #dfdfdf;
+  // background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff;
+  outline: 0;
+  border-radius: 16px;
+  box-sizing: border-box;
+  background-color: #dfdfdf;
+  transition: background-color 0.1s, border 0.1s;
+  cursor: pointer;
+}
+.soft-switch:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #fdfdfd;
+  box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff;
+  transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
+}
+.soft-switch:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+}
+.soft-switch-on {
+  border-color: $--color-primary;
+  background-color: $--color-primary;
+}
+.soft-switch-on:before {
+  border-color: $--color-primary;
+  background-color: $--color-primary;
+}
+.soft-switch-on:after {
+  transform: translateX(20px);
+}
