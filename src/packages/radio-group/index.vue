@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "s-radio-group",
+  name: "SRadioGroup",
   props: {
     value: {
       type: [String, Number]

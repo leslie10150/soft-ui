@@ -12,6 +12,9 @@ import Icon from './packages/icon'
 import Message from './packages/message'
 import Form from './packages/form'
 import FormItem from './packages/form-item'
+import Col from './packages/col'
+import Row from './packages/row'
+
 const components = [
   Icon,
   Button,
@@ -25,7 +28,9 @@ const components = [
   InputNumber,
   Message,
   Form,
-  FormItem
+  FormItem,
+  Col,
+  Row
 ]
 
 const install = function(Vue) {
