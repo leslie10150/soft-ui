@@ -30,6 +30,7 @@ module.exports = {
       {
         title: '组件',
         children: [
+          '/components/grid.md',
           '/components/button.md',
           '/components/notice.md',
           '/components/table.md',
