@@ -20,13 +20,13 @@ title: radio
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      group_sex: '男人'
+  export default {
+    data() {
+      return {
+        group_sex: "男人"
+      }
     }
   }
-}
 </script>
 ```
 

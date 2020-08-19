@@ -1,0 +1,65 @@
+{
+  "开发指南": [
+    {
+      "name": "site-index",
+      "path": "/"
+    },
+    {
+      "name": "introduce",
+      "path": "/introduce",
+      "desc": "介绍"
+    },
+    {
+      "name": "start",
+      "path": "/start",
+      "desc": "开始使用"
+    }
+  ],
+  "组件": [
+    {
+      "desc": "Button 按钮",
+      "name": "button",
+      "path": "/button"
+    },
+    {
+      "desc": "form 表单",
+      "name": "form",
+      "path": "/form"
+    },
+    {
+      "desc": "checkbox",
+      "name": "checkbox",
+      "path": "/checkbox"
+    },
+    {
+      "desc": "input",
+      "name": "input",
+      "path": "/input"
+    },
+    {
+      "desc": "message",
+      "name": "message",
+      "path": "/message"
+    },
+    {
+      "desc": "notice",
+      "name": "notice",
+      "path": "/notice"
+    },
+    {
+      "desc": "radio",
+      "name": "radio",
+      "path": "/radio"
+    },
+    {
+      "desc": "switch",
+      "name": "switch",
+      "path": "/switch"
+    },
+    {
+      "desc": "grid",
+      "name": "grid",
+      "path": "/grid"
+    }
+  ]
+}

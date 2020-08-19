@@ -5,7 +5,7 @@ title: switch
 
 
 :::demo
-```vue
+```html
 <template>
 	<div>
 		<s-switch v-model="show"></s-switch>

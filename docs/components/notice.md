@@ -4,7 +4,7 @@ title: notice
 # 通知
 
 ::: demo
-```vue
+```html
 <template>
 	<div>
 		<s-input type="text"

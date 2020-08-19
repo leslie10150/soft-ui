@@ -8,7 +8,7 @@ title: checkbox
 简单使用
 ::: demo
 
-```vue
+```html
 <template>
 	<div>
 		<s-checkbox-group v-model="hobby">

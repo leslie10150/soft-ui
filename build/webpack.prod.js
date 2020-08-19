@@ -30,7 +30,7 @@ module.exports = merge(webpackBaseConfig, {
     }
   },
   plugins: [
-    // new CleanWebpackPlugin(['lib']),
+    new CleanWebpackPlugin(['lib']),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"'
     })

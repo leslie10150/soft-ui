@@ -6,7 +6,7 @@ title: form
 
 ::: demo
 
-```vue
+```html
 <template>
   <div class="s-form-container">
     <s-form ref="form" :model="formdata" :rules="rules" label-width="80px">

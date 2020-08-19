@@ -3,7 +3,7 @@ title: Button
 ---
 ### 简单使用
 ::: demo
-```vue
+```html
 <template>
 	<div>
 		<s-button>{{button}}</s-button>

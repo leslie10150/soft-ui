@@ -1,0 +1,57 @@
+---
+title: Button
+---
+
+### 简单使用
+
+::: demo
+
+```html
+<template>
+  <div>
+    <s-button>{{button}}</s-button>
+    <s-button type="default">default</s-button>
+    <s-button type="primary">primary</s-button>
+    <s-button type="info">info</s-button>
+    <s-button type="success">success</s-button>
+    <s-button type="warning">warning</s-button>
+    <s-button type="error">error</s-button>
+  </div>
+</template>
+
+<script>
+  export default {
+    data() {
+      return {
+        button: "默认"
+      }
+    }
+  }
+</script>
+```
+
+:::
+<br />
+
+### Attributes
+
+| 参数        | 说明           | 类型    | 可选值                                             | 默认值 |
+| ----------- | -------------- | ------- | -------------------------------------------------- | ------ |
+| size        | 尺寸           | string  | medium / small / mini                              | —      |
+| type        | 类型           | string  | primary / success / warning / danger / info / text | —      |
+| plain       | 是否朴素按钮   | boolean | —                                                  | false  |
+| round       | 是否圆角按钮   | boolean | —                                                  | false  |
+| circle      | 是否圆形按钮   | boolean | —                                                  | false  |
+| loading     | 是否加载中状态 | boolean | —                                                  | false  |
+| disabled    | 是否禁用状态   | boolean | —                                                  | false  |
+| icon        | 图标类名       | string  | —                                                  | —      |
+| autofocus   | 是否默认聚焦   | boolean | —                                                  | false  |
+| native-type | 原生 type 属性 | string  | button / submit / reset                            | button |
+
+<br />
+
+### Events
+
+| 方法名 | 说明             | 参数           |
+| ------ | ---------------- | -------------- |
+| click  | 按钮被点击时触发 | (event: Event) |

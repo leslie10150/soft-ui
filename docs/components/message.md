@@ -4,7 +4,7 @@ title: message
 # message
 
 :::demo
-```vue
+```html
 <template>
 	<div>
 		<s-button @click.native="add">{{button}}</s-button>
